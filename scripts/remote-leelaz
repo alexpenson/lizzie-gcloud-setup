@@ -3,5 +3,5 @@
 #Script for executing leelaz remotely.
 
 set -eu
-source ../config.sh
-gcloud compute ssh "$INSTANCE_NAME" --zone "$ZONE" --command "/leela/leelaz -g -w /leela/$NETWORK-network.gz -b 0 -t 16"
+# source ../config.sh
+gcloud compute ssh --project alexpenson-cs231 --zone europe-west4-a instance-1 --command '/home/pensona/leela-zero/build/leelaz --gtp --threads 3 --noponder --weights /home/pensona/best-network.gz'
