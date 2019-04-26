@@ -4,7 +4,7 @@
 # See https://cloud.google.com/compute/docs/gpus/add-gpus#create-new-gpu-instance for more details.
 
 # the name of the created instance
-INSTANCE_NAME=leelazero-v100
+INSTANCE_NAME=instance-1
 
 # can be either "best" or "elf" for the facebook opengo converted weights (currently stronger, slower)
 NETWORK=best
